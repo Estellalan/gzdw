@@ -1,35 +1,10 @@
 <template>
     <ContentField>
         <div class="row">
-            <div class="col-sm-8 mb-3 mb-sm-0">
-                <div class="card">
-                    <div class="card-header">新能源消纳率可视化图(左)与线路传输容量可视化图(右)</div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <BarChartForWeak />
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <LineChart />
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary" type="button">运行</button>
-                    </div>
-                </div>
-            </div>
             <div class="col-sm-4 mb-3 mb-sm-0">
                 <div class="card">
-                    <div class="card-header">可调柔性负荷节点编号排序图</div>
+                    <div class="card-header">负荷价格调控结果</div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12 mb-3 mb-sm-0">
@@ -43,9 +18,51 @@
                           
                         </div>
                         <button class="btn btn-primary" type="button">运行</button>
+                        
                     </div>
                 </div>
             </div>
+
+            <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-header">负荷直接调控结果</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3 mb-sm-0">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <BarChartForWeak />
+
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <button class="btn btn-primary" type="button">运行</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-header">负荷多元联动调控成本</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3 mb-sm-0">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <LineChart />
+
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <button class="btn btn-primary" type="button">运行</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </ContentField>
 </template>

@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import WeakIdentify from '@/views/WeakIdentify'
 import LoadControl from '@/views/LoadControl'
-
+import ControlResults from '@/views/ControlResults.vue'
 
 const routes = [
   {
@@ -15,6 +15,11 @@ const routes = [
     name: "loadControl",
     component: LoadControl,
   },
+  {
+    path: "/results/",
+    name: "results",
+    component:ControlResults,
+  }
 
 ]
 
